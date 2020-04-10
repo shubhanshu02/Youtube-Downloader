@@ -1,6 +1,6 @@
 import sys
 from pytube import YouTube
-main(url=""):
+def main(url=""):
     if url=="":
         url = input("Enter the URL of the youtube video: ")
     
