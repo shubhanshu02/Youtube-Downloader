@@ -20,4 +20,4 @@ main(url=""):
         print("TRY AGAIN LATER!")
 
 if  __name__=="__main__":
-    main(sys[1])
+    main(sys.argv[1])
