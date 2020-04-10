@@ -5,6 +5,8 @@ def main(url="",res=None):
         url = input("Enter the URL of the youtube video: ")
     if res!=None:
         res=res[1:]
+    print("specify the resolution")
+    res=str(input())
     try:
         yt = YouTube(url)
         print("\nTitle of Video:", yt.title)
