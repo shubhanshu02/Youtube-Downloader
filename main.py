@@ -17,13 +17,19 @@ def getRequest(url: str):
         print("\nSome unknown error occured. Please report it at https://github.com/shubhanshu02/Youtube-Downloader/issues")
         exit()
     return yt
-
+def AvailableRes(yt):
+    AvailableResolutions = set()
+    for i in yt.streams.filter(progressive=True):
+        if type(i.resolution)==str:
+            AvailableResolutions.add(i.resolution)
+    print("\nAvailable resolutions:", *AvailableResolutions)
 
 def main(url="",res=None):
     if url=="":
         url = input("Enter the URL of the youtube video: ")
     yt = getRequest(url)
-
+    AvailableRes(yt)
+    
     if res != None:
         res=res[1:]
     else:
