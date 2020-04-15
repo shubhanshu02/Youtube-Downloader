@@ -1,17 +1,16 @@
-<h1>Youtube-Downloader</h1>
-<div>YouTube Video Downloader made in Python</div>
-<p>
-This is a simple python program to download YouTube videos directly through Python.<br>
-Currently it downloads videos in the highest available quality if resolution is not found.<br>
-This program saves the video in .mp4 format in the same directory as that of the program.<p>
-<hr>
-<div>
-<b><Usage</b>
-<ul>
-  <li><p>Both resoulution and url can be passed as an arguement</p>
-    <b>python main.py -res url</b></li>
-  <li><p>only url can be passed as an arguement</p>
-    <b>python main.py url<b></li>
-      <li><p>The url and the resoulution can be input manually in the program</p>
-        <b>python main.py</b></li><ul>
-  <hr></div>
+# Youtube Video Downloader
+
+### Introduction
+This is a simple program written in *Python 3* to download YouTube videos directly through Python. This program saves the video in <em> .mp4 </em> format in the same directory as that of the program.
+
+### Usage
+The program can be run with or without arguments. Both resolution and URL of the video can be passed as arguments. The program can be run in the following ways - 
+1. ` python main.py -resolution url`
+2. ` python main.py url`
+3. ` python main.py`
+> If the resolution is not passed as an argument, the program displays the available resolutions to download.
+
+### Libraries Used
+* sys
+* pytube
+*  urllib
