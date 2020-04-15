@@ -3,10 +3,10 @@ from pytube import YouTube
 def main(url="",res=None):
     if url=="":
         url = input("Enter the URL of the youtube video: ")
-    if res!=None:
+    if res != None:
         res=res[1:]
-    print("specify the resolution")
-    res=str(input())
+    else:
+        res=str(input("Specify the resolution: "))
     try:
         yt = YouTube(url)
         print("\nTitle of Video:", yt.title)
@@ -23,7 +23,7 @@ def main(url="",res=None):
         print(stream)
         stream = stream.download()
         print("Done Downloading", stream)
-    
+
     except:
         print("\nConnection Error\n")
         print("TRY AGAIN LATER!")
