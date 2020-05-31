@@ -1,11 +1,12 @@
 import sys
 import pytube
 from pytube import YouTube
+from pytube.cli import on_progress
 import urllib
 
 def getRequest(url: str):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url,on_progress_callback=on_progress)
         print("\nTitle of Video:", yt.title)
     except urllib.error.URLError:
         print("\nNo Internet. Please make sure you have an active internet connection.")

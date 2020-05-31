@@ -10,7 +10,9 @@ The program can be run with or without arguments. Both resolution and URL of the
 3. ` python main.py`
 > If the resolution is not passed as an argument, the program displays the available resolutions to download.
 
+> Now with Progress bar added
 ### Libraries Used
 * sys
 * pytube
 *  urllib
+
