@@ -1,5 +1,7 @@
 # Youtube Video Downloader
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/50171f1e8102425080e04dab65ffe3e5)](https://www.codacy.com/manual/shubhanshu02/Youtube-Downloader?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shubhanshu02/Youtube-Downloader&amp;utm_campaign=Badge_Grade)
+
 ## Introduction
 This is a simple program written in *Python 3* to download YouTube videos directly through Python. This program saves the video in <em> .mp4 </em> format in the same directory as that of the program.
 
