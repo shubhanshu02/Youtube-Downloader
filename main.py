@@ -14,15 +14,12 @@ def getRequest(url: str):
     except pytube.exceptions.RegexMatchError:
         print("\nInvalid address for youtube video. ")
         exit()
-    except:
-        print("\nSome unknown error occured. Please report it at https://github.com/shubhanshu02/Youtube-Downloader/issues")
-        exit()
     return yt
 
 def AvailableRes(yt):
     AvailableResolutions = set()
     for i in yt.streams.filter(progressive=True):
-        if type(i.resolution)==str:
+        if isinstance(i.resolution, str):
             AvailableResolutions.add(i.resolution)
     print("\nAvailable resolutions:", *AvailableResolutions)
 
