@@ -29,14 +29,14 @@ def main(url="",res=None):
 
     yt = getRequest(url)
     AvailableRes(yt)
-    if res != None:
-        res=res[1:]
-    else:
+    if res is None:
         res = str(input("Specify the resolution: "))
+    else:
+        res=res[1:]
 
     stream = yt.streams.filter(progressive=True, file_extension='mp4',res=str(res)).first()
 
-    if (stream == None):
+    if (stream is None):
         print("\nResolution Not Found")
         exit()
         
